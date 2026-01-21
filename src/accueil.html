@@ -4,12 +4,14 @@
         <h1>Bienvenu sur la page</h1>
         <p>Vous êtes ici</p>
 
-        <form action="/submit-form" method="POST">
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="user_name" required>
+        <form action="/name-form" method="POST">
+            <label for="userFistName">Prénom :</label>
+            <input type="text" id="nom" name="user_fistName" required>
+            <label for="userLastName">Nom :</label>
+            <input type="text" id="nom" name="user_lastName" required>
   
-            <label for="message">Message :</label>
-            <textarea id="message" name="user_message"></textarea>
+            <!-- <label for="message">Message :</label>
+            <textarea id="message" name="user_message"></textarea> -->
   
             <button type="submit">Envoyer</button>
         </form>
