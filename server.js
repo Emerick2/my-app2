@@ -19,7 +19,7 @@ var server = app.listen(process.env.PORT || 3000, function () {
 
 //------
 
-app.post('/submit-form', function (req, res) {
+app.post('/name-form', function (req, res) {
   var fisrtName = req.body.user_fistName;
   var lastName = req.body.user_lastName;
   
