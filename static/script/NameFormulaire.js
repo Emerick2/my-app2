@@ -12,8 +12,6 @@ document.getElementById('name-form').addEventListener('submit', function(e) {
     })
     .then(response => response.text())
     .then(data => {
-        // const bloque = document.getElementById("bloqueRéponse");
-        // bloque.innerHTML = '';
         document.getElementById('reponse').textContent = `${data}`;
     });
 });
