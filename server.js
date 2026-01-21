@@ -17,12 +17,12 @@ var express = require('express');
 var path = require('path');
 var app = express();
 
-app.get('/acceuil', function(req, res) {
-    res.sendFile(path.join(__dirname, 'src', 'acceuil.html'));
+app.get('/accueil', function(req, res) {
+    res.sendFile(path.join(__dirname, 'src', 'accueil.html'));
 });
 
 app.get('/', function (req, res) {
-  res.redirect('/acceuil');
+  res.redirect('/accueil');
 });
 
 var server = app.listen(process.env.PORT || 3000, function () {
