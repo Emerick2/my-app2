@@ -14,6 +14,6 @@ document.getElementById('name-form').addEventListener('submit', function(e) {
     .then(data => {
         // const bloque = document.getElementById("bloqueRéponse");
         // bloque.innerHTML = '';
-        document.getElementById('reponse').textContent += `<p>${data}</p>`;
+        document.getElementById('reponse').textContent += `${data}`;
     });
 });
