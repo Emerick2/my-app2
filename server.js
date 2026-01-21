@@ -23,7 +23,8 @@ app.post('/name-form', function (req, res) {
   var fisrtName = req.body.user_fistName;
   var lastName = req.body.user_lastName;
   
-  res.send(`Bonjour ${fisrtName} ${lastName} !`);
+  // res.send(`Bonjour ${fisrtName} ${lastName} !`);
+  document.getElementById("reponse").textContent = `Bonjour ${fisrtName} ${lastName} !`;
 });
 
 app.listen(3000, () => console.log('Serveur actif sur le port 3000'));
