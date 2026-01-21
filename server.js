@@ -3,10 +3,10 @@ var path = require('path');
 var app = express();
 
 app.use(express.urlencoded({ extended: true })); // POST
-app.use(express.static('src')); // CSS/JS
+app.use(express.static('static')); // CSS/JS
 
 app.get('/accueil', function(req, res) {
-  res.sendFile(path.join(__dirname, 'src', 'accueil.html'));
+  res.sendFile(path.join(__dirname, 'static/src', 'accueil.html'));
 });
 
 app.get('/', function (req, res) {
